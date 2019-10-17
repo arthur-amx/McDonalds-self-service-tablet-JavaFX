@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFX.jnlp">
+  <information>
+    <title>JavaFX</title>
+    <vendor>Arthur</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFX.jar" size="8999388" download="eager" />
+    <jar href="lib\byte-buddy-1.8.15.jar" size="2987269" download="eager" />
+    <jar href="lib\client-combined-3.141.59-sources.jar" size="529743" download="eager" />
+    <jar href="lib\client-combined-3.141.59.jar" size="1527879" download="eager" />
+    <jar href="lib\commons-exec-1.3.jar" size="54423" download="eager" />
+    <jar href="lib\guava-25.0-jre.jar" size="2738171" download="eager" />
+    <jar href="lib\javax.mail.jar" size="659033" download="eager" />
+    <jar href="lib\okhttp-3.11.0.jar" size="413639" download="eager" />
+    <jar href="lib\okio-1.14.0.jar" size="85756" download="eager" />
+    <jar href="lib\pagseguro-api-2.2.0.jar" size="241933" download="eager" />
+    <jar href="lib\restfb-2.12.0.jar" size="635195" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFX" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="javafx.main"  name="JavaFX" />
+  <update check="always"/>
+</jnlp>

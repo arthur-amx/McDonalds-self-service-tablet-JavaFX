@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="487.0" prefWidth="745.0" styleClass="body" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.ControlerFXML.FXMLTelaInicialController">
+   <children>
+      <ImageView fitHeight="123.0" fitWidth="123.0" layoutX="622.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView id="admin" fx:id="IMGadmin" fitHeight="150.0" fitWidth="200.0" layoutX="155.0" layoutY="169.0" onMouseClicked="#actionAbrirTelaLoginAdmin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/admin.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="user" fx:id="IMGuser" fitHeight="123.0" fitWidth="133.0" layoutX="472.0" layoutY="185.0" onMouseClicked="#actionAbrirTelaLoginUser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="23.0" prefHeight="97.0" prefWidth="745.0" text="Autenticação" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="55.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelAdmin" alignment="CENTER" layoutX="153.0" layoutY="317.0" prefHeight="31.0" prefWidth="165.0" text="Administrador" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelUser" alignment="CENTER" layoutX="461.0" layoutY="317.0" prefHeight="31.0" prefWidth="133.0" text="Usuário" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

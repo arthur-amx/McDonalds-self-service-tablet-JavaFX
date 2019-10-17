@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="1070.0" styleClass="body" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.ControlerFXML.FXMLTelaMenuAdminController">
+   <children>
+      <Label alignment="CENTER" layoutY="33.0" prefHeight="112.0" prefWidth="1070.0" text="Gerenciamento de Produtos" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="60.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="IMGcadastrar" fitHeight="238.0" fitWidth="238.0" layoutX="56.0" layoutY="189.0" onMouseClicked="#actionAbrirTelaCadastrarAdmin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/CadastroItem.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="IMGvisualizar" fitHeight="238.0" fitWidth="241.0" layoutX="548.0" layoutY="189.0" onMouseClicked="#actionAbrirTelaVisuAdmin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/Visualização.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="IMGedicao" fitHeight="229.0" fitWidth="224.0" layoutX="804.0" layoutY="224.0" onMouseClicked="#actionAbrirTelaEdicaoAdmin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/Edição.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="84.0" layoutY="440.0" prefHeight="29.0" prefWidth="181.0" text="Cadastro" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="324.0" layoutY="467.0" prefHeight="29.0" prefWidth="181.0" text="Exclusão" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="570.0" layoutY="440.0" prefHeight="29.0" prefWidth="181.0" text="Visualização" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="825.0" layoutY="467.0" prefHeight="29.0" prefWidth="181.0" text="Edição" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logo" fitHeight="112.0" fitWidth="94.0" layoutX="947.0" layoutY="535.0" onMouseClicked="#voltarTela" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+         <image>
+            <Image url="@../imgs/logoPNG.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="IMGexcluir" fitHeight="231.0" fitWidth="238.0" layoutX="304.0" layoutY="213.0" onMouseClicked="#actionAbrirTelaExcluirAdmin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/Exclusao.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
